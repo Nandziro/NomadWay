@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+<header class="header">
+    <div class="logo">Travels</div>
+    <nav class="navigation">
+      <a href="/">Home</a>
+      <a href="./travel.html">Travel</a>
+      <a href="/reviews">Reviews</a>
+    </nav>
+    <div class="auth-buttons">
+        <button id="loginRegisterButton">Login / Register</button>
+    </div>
+</header>
+
+  <main class="main">
+    <section class="post-form">
+      <h2>Create a New Post</h2>
+      <form id="postForm">
+        <input type="text" id="postTitle" placeholder="Title" required>
+        <textarea id="postContent" placeholder="Content" rows="5" required></textarea>
+        <input type="text" id="postAuthor" placeholder="Author" required>
+        <button type="submit">Post</button>
+      </form>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="blog-posts">
+      <h2>Recent Posts</h2>
+      <div id="postsContainer"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="about-us">
+      <h3>About Us</h3>
+      <p>We are passionate about helping you explore the world.</p>
+    </div>
+    <div class="social-media">
+      <h3>Follow Us</h3>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </div>
+    <div class="rules">
+      <h3>Rules</h3>
+      <p>Read our terms and conditions here.</p>
+    </div>
+  </footer>
+
+  <script src="blog.js"></script>
+  <script src="./login.js"></script>
+</body>
+</html>

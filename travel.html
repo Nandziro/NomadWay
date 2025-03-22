@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travels</title>
+  <link rel="stylesheet" href="./travel.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Travels</div>
+    <nav class="navigation">
+      <a href="/">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="/reviews">Reviews</a>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <button>Search</button>
+    </div>
+  </header>
+
+  <div class="discount-banner">
+    <p class="discount-text">Get 50% off on your next adventure! Limited time offer</p>
+    <div class="discount-timer">
+      <span id="timer">1:00:00</span>
+    </div>
+    <button class="discount-button">Claim Offer</button>
+  </div>
+
+  <!-- Main -->
+  <main class="main">
+
+  
+    <section class="trending">
+      <h2>Trending Tours</h2>
+      <div class="slider__box">
+        <div class="slider">
+          <div class="slider__slide">
+            <div class="slider__content">
+              <h2 class="slide-title">Tokyo</h2>
+              <p class="slide-text">Explore the vibrant streets of Tokyo.</p>
+            </div>
+            <img src="./Tokyo.jpg" alt="Tokyo" class="slide-image">
+          </div>
+      
+          <div class="slider__slide">
+            <div class="slider__content">
+              <h2 class="slide-title">New York</h2>
+              <p class="slide-text">Experience the energy of New York City.</p>
+            </div>
+            <img src="./newYprk.jpg" alt="New York" class="slide-image">
+          </div>
+      
+          <div class="slider__slide">
+            <div class="slider__content">
+              <h2 class="slide-title">Paris</h2>
+              <p class="slide-text">Discover the romance of Paris.</p>
+            </div>
+            <img src="./Paris.jpg" alt="Paris" class="slide-image">
+          </div>
+      
+        </div>
+      
+      </div>
+
+    </section>
+
+    <section class="countries">
+      <h2>Explore Countries</h2>
+      <div class="countries-grid">
+        <!-- Country cards will be dynamically populated -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="about-us">
+      <h3>About Us</h3>
+      <p>We are passionate about helping you explore the world.</p>
+    </div>
+    <div class="social-media">
+      <h3>Follow Us</h3>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </div>
+    <div class="rules">
+      <h3>Rules</h3>
+      <p>Read our terms and conditions here.</p>
+    </div>
+  </footer>
+
+  <div class="modal hidden">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2 id="country-name"></h2>
+      <img id="country-flag" alt="Country Flag">
+      <p id="country-info"></p>
+      <h3>Popular Events</h3>
+      <ul id="events-list"></ul>
+    </div>
+  </div>
+
+  <script src="./travel.js"></script>
+</body>
+</html>

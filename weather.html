@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./weather.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="card__weather">
+        <form>
+            <input class="search__weather" type="text" id="name" autocomplete="off">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <section class="result">
+    
+            <figure class="name">
+                <figcaption>Ukraine</figcaption> 
+                <img src="https://flagsapi.com/GB/shiny/32.png">
+            </figure>
+    
+            <figure class="temperature">
+                <img src="https://openweathermap.org/img/wn/10d@4x.png">
+                <figcaption class="figcaption">
+                    <span>31</span>
+                    <sup>C°</sup>
+                </figcaption> 
+            </figure>
+            <p class="description">overcast clouds</p>
+            <ul class="answer__box">
+                <ol>
+                    <span>clouds</span>
+                    <i class="fa-solid fa-cloud"></i>
+                    <span id="clouds">98</span>%
+                </ol>
+                <ol>
+                    <span>humidity</span>
+                    <i class="fa-solid fa-droplet"></i>
+                    <span id="humidity">98</span>%
+                </ol>
+                <ol>
+                    <span>pressure</span>
+                    <i class="fa-solid fa-gauge"></i>
+                    <span id="pressure">1011</span>hPa
+                </ol>
+            </ul>
+        </section>
+    
+    </div>
+
+
+    <script src="./weather.js"></script>
+</body>
+</html>
